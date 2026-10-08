@@ -8,18 +8,23 @@
     </head>
     <body>
         <div class="container">
-            <h1>Palindrome Checker</h1>
-            <div class="inputBox">
+            <div class="card-header">
+                <h1>Palindrome Checker 🔄</h1>
+                <p class="subtitle">Check if a word, phrase, or number reads the same backward as forward.</p>
+            </div>
+
+            <div class="input-group">
                 <input
-                    required
-                    autofocus
                     type="text"
                     id="inputStr"
-                    placeholder="type here ..."
+                    placeholder="Type a word or phrase..."
+                    autofocus
+                    autocomplete="off"
                 />
                 <button id="checkBtn">Check</button>
             </div>
-            <p id="result"></p>
+
+            <div id="result" class="result-badge hidden"></div>
         </div>
 
         <script src="script.js"></script>
